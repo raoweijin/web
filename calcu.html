@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>HTML Calculator</title>
+</head>
+<body bgcolor= "#000000" text= "gold">
+<form name="calculator" >
+<input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+<input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+<input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+<input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+ 
+<input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+<input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+<input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+<input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+ 
+<input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+<input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+<input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+<input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+<input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+ 
+<input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+<input type="reset" value="Reset">
+<!---<input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">--->
+<input type="button" value="=" onClick="document.calculator.ans.value=eval("989")">
+<br>Solution is <input type="textfield" name="ans" value="">
+</form>
+
+<form action="目标地址" method="发送方式" enctype="数据主体的编码方式">  
+    <!-- 各类型的表单域 -->  
+    <input name="NAME" value="VALUE"/>  
+    <textarea name="NAME">VALUE</textarea>  
+    <select name="NAME">  
+        <option value="VALUE" selected="selected"/>  
+    </select>  
+</form>  
+<form action="checkUser.html?opt=xxx" method="POST"   
+        enctype="multipart/form-data">  
+    <input type="text" name="username" value="yyy-Post"/>  
+    <input type="text" name="age" value="zzz-Post"/>  
+    <input type="file" name="file" />  
+    <inupt type="submit" value="submit"/>  
+</form>  
+
+<form action="test4.py?opt=xxx" method="GET">  
+    <input type="text" name="username" value="yyy-Get"/>  
+    <input type="text" name="age" value="zzz-Get"/>  
+    <input type="submit" value="submit"/>  
+</form>  
+
+<form role="form" action="test5.py" method="post">
+
+    <label for="person_name">Person name</label>                    
+    <input id="person_name" type="text" name="person_name">
+
+    <label for="email_address">Email address</label>                    
+    <input id="email_address" type="text" name="email_address">
+
+    <button id="submit_button" type="submit" >submit</button>
+
+</form>
+
+</body>
+</html>
