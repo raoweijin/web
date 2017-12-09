@@ -1,6 +1,13 @@
 <html>
 <head>
 <title>HTML Calculator</title>
+<script>
+    function myFunction()
+    {
+    document.getElementById("demo").innerHTML="My First JavaScript Function";
+    }
+</script>
+
 </head>
 <body bgcolor= "#000000" text= "gold">
 <form name="calculator" >
@@ -23,7 +30,7 @@
 <input type="button" value="0" onClick="document.calculator.ans.value+='0'">
 <input type="reset" value="Reset">
 <!---<input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">--->
-<input type="button" value="=" onClick="document.calculator.ans.value=eval("989")">
+<input type="button" value="=" onClick="document.calculator.ans.value='a'">
 <br>Solution is <input type="textfield" name="ans" value="">
 </form>
 
@@ -35,12 +42,12 @@
         <option value="VALUE" selected="selected"/>  
     </select>  
 </form>  
-<form action="checkUser.html?opt=xxx" method="POST"   
-        enctype="multipart/form-data">  
-    <input type="text" name="username" value="yyy-Post"/>  
-    <input type="text" name="age" value="zzz-Post"/>  
-    <input type="file" name="file" />  
-    <inupt type="submit" value="submit"/>  
+
+
+<form action="sample.html?opt=xxx" method="GET">  
+    <input type="text" name="username" value="yyy-Get"/>  
+    <input type="text" name="age" value="zzz-Get"/>  
+    <input type="submit" value="submit"/>  
 </form>  
 
 <form action="test4.py?opt=xxx" method="GET">  
@@ -60,6 +67,28 @@
     <button id="submit_button" type="submit" >submit</button>
 
 </form>
+
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").style.fontSize = "25px";
+document.getElementById("demo").style.color = "red";
+document.getElementById("demo").style.backgroundColor = "yellow";
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script> 
+
+<h1>My Web Page</h1>
+
+<p id="demo">A Paragraph</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script src="myScript.js" type = "text/javascript"></script>
+
+<input type = "button" onclick = "Hello();" name = "ok" value = "Click Me" />
+
+
 
 </body>
 </html>
